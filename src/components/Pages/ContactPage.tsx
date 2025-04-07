@@ -94,7 +94,7 @@ const MapCard: React.FC<{ location: MapLocation }> = ({ location }) => {
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-1">{location.title}</h3>
         <div className="flex items-center text-sm text-gray-600">
-          <MapPin className="h-4 w-4 mr-1" />
+          {/* <MapPin className="h-4 w-4 mr-1" /> */}
           <p>{location.address}</p>
         </div>
       </div>
@@ -126,68 +126,62 @@ const ContactSection: React.FC = () => {
 
   const mapLocations: MapLocation[] = [
     {
-      title: 'Headquarters',
-      address: '123 Business Ave, New York, NY 10001',
-      coordinates: { lat: 40.7128, lng: -74.0060 },
-      zoom: 13,
+        title: 'REGISTERED ADDRESS',
+        address: '197, Sairam krupa, Above SBI, opp to R.R Nagar police station, BEML 4th stage, J.N.Road, Rajarajeshwarinagar, Bengaluru-560098',
+        coordinates: { lat: 12.913061, lng: 77.520982 },
+        zoom: 25,
     },
     {
-      title: 'West Coast Office',
-      address: '456 Tech Blvd, San Francisco, CA 94103',
-      coordinates: { lat: 37.7749, lng: -122.4194 },
-      zoom: 13,
+        title: 'BRANCH OFFICE',
+        address: ' 354, 1st Cross Rd, BHEL Layout, RR Nagar, Bengaluru, Karnataka,  Pin Code - 560098',
+        coordinates: { lat: 12.9197697, lng: 77.5098746 },
+        zoom: 17,
     },
-    {
-      title: 'European Branch',
-      address: '789 Innovation St, London, UK',
-      coordinates: { lat: 51.5074, lng: -0.1278 },
-      zoom: 13,
-    },
-  ];
+]; 
 
   const contactDetails = [
-    { icon: MapPin, text: '457 BigBlue Street, NY 10013' },
-    { icon: Phone, text: '+44 300 303 0266' },
-    { icon: Mail, text: 'info@academist.edu' },
-    { icon: Clock, text: 'Mon - Sat 8.00 - 18.00' },
+    { icon: MapPin, text: 'REGISTERED ADDRESS:#197, Sairam krupa, Above SBI, opp to R.R Nagar police station, BEML 4th stage, J.N.Road, Rajarajeshwarinagar, Bengaluru-560098' },
+    { icon: MapPin, text: 'BRANCH OFFICE: #354, 1st Cross Rd, BHEL Layout, RR Nagar, Bengaluru, Karnataka – 560098' },
+    { icon: Phone, text: ' +91 98453 52222' },
+    { icon: Mail, text: ' info@vagdeviinstitute.com' },
   ];
 
   return (
     <div className="flex flex-col bg-gray-100">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full">
-        {/* Background Image */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <img
-            src="https://academist.qodeinteractive.com/wp-content/uploads/2018/06/Contact-us-title-img.jpg"
-            alt="Contact background"
-            className="w-full h-full object-cover"
-          />
-        </div>
+<section className="relative h-[30vh] md:h-[50vh] w-full">
+  {/* Background Image */}
+  <div className="absolute inset-0 w-full h-full overflow-hidden">
+    <img
+      src="contact.jpg"
+      alt="Contact background"
+      className="w-full h-full object-cover object-center "
+    />
+  </div>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gray-800/70 z-0"></div>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gray-800/50 z-0"></div>
 
-        {/* Content */}
-        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-              Contact Us
-            </h1>
-            <p className="text-xl text-white/90">
-              Find us at our global locations
-            </p>
-          </motion.div>
-        </div>
-      </section>
+  {/* Content */}
+  <div className="w-full h-full flex items-center justify-center relative z-10">
+    <motion.div
+      className="text-center"
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+    >
+      <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold text-white mb-4">
+        Contact Us
+      </h1>
+      <p className="text-xl text-white/90">
+        Find us at our global locations
+      </p>
+    </motion.div>
+  </div>
+</section>
 
-      {/* Maps Section */}
-      <section className="py-16 md:py-30 relative z-10 shadow-md overflow-hidden">
+{/* Maps Section */}
+<section className="py-6 md:py-18 relative z-10 shadow-md overflow-hidden">
         {/* Fixed background image for Our Centres */}
         <div className="absolute inset-0 w-full h-full z-0">
           <div 
@@ -202,19 +196,11 @@ const ContactSection: React.FC = () => {
           ></div>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.h2
-            className="text-5xl font-bold mb-24 text-center text-gray-800"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            OUR CENTRES
-          </motion.h2>
+        <div className="container mx-auto px-20 relative z-10">
+          
 
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-20"
             initial="initial"
             animate="animate"
             viewport={{ once: true, amount: 0.2 }}
@@ -237,8 +223,9 @@ const ContactSection: React.FC = () => {
         </div>
       </section>
 
+
       {/* Contact Form Section */}
-      <section className="py-16 md:py-42 bg-white">
+      <section className="pt-10 pb-12 md:pt-17 md:pb-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             {/* Contact Info */}
@@ -249,7 +236,7 @@ const ContactSection: React.FC = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+              <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-2">
                 Get in touch
               </h2>
               <div className="w-16 h-1 bg-red-500 mb-6"></div>
@@ -257,24 +244,36 @@ const ContactSection: React.FC = () => {
                 Our team is here to answer your questions and help you with any inquiries you may have.
               </p>
 
-              <div className="space-y-4">
-                {contactDetails.map((detail, index) => (
-                  <motion.div
-                    key={index}
-                    className="flex items-center text-gray-700"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
-                  >
-                    <detail.icon
-                      className="text-red-500 mr-3 flex-shrink-0"
-                      size={18}
-                      strokeWidth={1.5}
-                    />
-                    <span>{detail.text}</span>
-                  </motion.div>
-                ))}
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <MapPin className="text-red-500 mt-1 mr-3 flex-shrink-0" size={18} />
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-1">Registered Office</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      #197, Sairam krupa, Above SBI, opp to R.R Nagar police station, BEML 4th stage, J.N.Road, Rajarajeshwarinagar, Bengaluru-560098
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <MapPin className="text-red-500 mt-1 mr-3 flex-shrink-0" size={18} />
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-1">Branch Office</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      #354, 1st Cross Rd, BHEL Layout, RR Nagar, Bengaluru, Karnataka – 560098
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <Phone className="text-red-500 mr-3 flex-shrink-0" size={18} />
+                  <p className="text-gray-700 text-sm font-medium">+91 98453 52222</p>
+                </div>
+
+                <div className="flex items-center">
+                  <Mail className="text-red-500 mr-3 flex-shrink-0" size={18} />
+                  <p className="text-gray-700 text-sm font-medium">info@vagdeviinstitute.com</p>
+                </div>
               </div>
             </motion.div>
 
@@ -287,7 +286,7 @@ const ContactSection: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
             >
               <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4 mt-12">
                   <input
                     type="text"
                     name="name"
@@ -347,7 +346,6 @@ const ContactSection: React.FC = () => {
           </div>
         </div>
       </section>
-
       <ApplySection />
     </div>
   );

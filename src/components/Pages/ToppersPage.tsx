@@ -18,75 +18,92 @@ interface ToppersData {
 const toppersData: ToppersData = {
   '2024': {
     'CBSE X Toppers': [
-      { name: 'VARSHA PRASAD', image: 'https://i.pinimg.com/736x/56/7a/d2/567ad26c22b991cb9f52b999f70b855d.jpg', percentage: '95 %' },
-      { name: 'VARSHA PRASAD', image: 'https://i.pinimg.com/736x/56/7a/d2/567ad26c22b991cb9f52b999f70b855d.jpg', percentage: '95 %' },
-      { name: 'TARUN UPADHYA', image: 'https://via.placeholder.com/150/e0e0e0/333?Text=TU', percentage: '94 %' },
-      { name: 'DIVYASHREE.S', image: 'https://via.placeholder.com/150/d0d0d0/333?Text=DS', percentage: '94 %' },
+      { name: 'VARSHA PRASAD', image: 'image31.png', percentage: '95 %' },
+      { name: 'TARUN UPADHYA', image: 'image32.png', percentage: '94 %' },
+      { name: 'DIVYASHREE.S', image: 'image33.png', percentage: '94 %' },
+      { name: 'SAANVI MAHESH RAJU', image: 'image34.png', percentage: '94 %' },
+      { name: 'ANISH JOSHI', image: 'image35.png', percentage: '94 %' },
+      { name: 'KEERTHANA K', image: 'image36.png', percentage: '93 %' },
+      { name: 'GAGAN M', image: 'image37.png', percentage: '94 %' },
+      { name: 'AADITRI M', image: 'image38.png', percentage: '92 %' },
+      { name: 'SHRUTHI SHASHIDHAR', image: 'image39.png', percentage: '92 %' },
+      { name: 'SAMARTH R KOWSHIK', image: 'image40.png', percentage: '90 %' },
+      { name: 'ARJUN P RAO', image: 'image41.png', percentage: '90 %' },
     ],
     'ICSE X Toppers': [
-      { name: 'ANIKA SHARMA', image: 'https://via.placeholder.com/150/c0c0c0/333?Text=AS', percentage: '98 %' },
-      { name: 'ROHAN VERMA', image: 'https://via.placeholder.com/150/b0b0b0/333?Text=RV', percentage: '97 %' },
-      { name: 'PRIYA GUPTA', image: 'https://via.placeholder.com/150/a0a0a0/333?Text=PG', percentage: '96 %' },
+      { name: 'C.M.PANKAJ', image: 'image42.png', percentage: '95 %' },
+      { name: 'TANMAYEE', image: 'image43.png', percentage: '94 %' },
+      { name: 'SHREEEYA YARRISWAMY', image: 'image44.png', percentage: '94 %' },
+      { name: 'KATHYAYANI V', image: 'image45.png', percentage: '93.3 %' },
+      { name: 'ANKITA ANAND', image: 'image46.png', percentage: '93 %' },
+      { name: 'SAI ASHITH.V', image: 'image47.png', percentage: '93 %' },
+      { name: 'TEJINI MAHESH', image: 'image48.png', percentage: '93 %' },
+      { name: 'MOKSHANTH SRIRAMANENI' , image: 'image49.png', percentage: '92 %' },
+      { name: 'DIVYADHARSHINI', image: 'image50.png', percentage: '91.3 %' },
+      { name: 'CHINMAYI SURESH', image: 'image51.png', percentage: '91 %' },
+      { name: 'MANISH GOWDA.D', image: 'image52.png', percentage: '91 %' },
+      { name: 'AARAV SHAMACHAR', image: 'image53.png', percentage: '91 %' },
+      { name: 'RISHI N', image: 'image54.png', percentage: '90.2 %' },
+      { name: 'SMRATI CHOUGALA', image: 'image55.png', percentage: '85 %' },
+
+
     ],
   },
   '2023': {
-    'CBSE X Toppers': [
-      { name: 'AMAN SINGH', image: 'https://via.placeholder.com/150/909090/333?Text=AS', percentage: '96 %' },
-      { name: 'SHIKHA YADAV', image: 'https://via.placeholder.com/150/808080/333?Text=SY', percentage: '95 %' },
-      { name: 'VIKAS RAI', image: 'https://via.placeholder.com/150/707070/333?Text=VR', percentage: '94 %' },
-    ],
-    'ICSE X Toppers': [
-      { name: 'SANJANA NAIR', image: 'https://via.placeholder.com/150/606060/333?Text=SN', percentage: '99 %' },
-      { name: 'DEEPAK PATEL', image: 'https://via.placeholder.com/150/505050/333?Text=DP', percentage: '98 %' },
-      { name: 'ISHA MEHRA', image: 'https://via.placeholder.com/150/404040/333?Text=IM', percentage: '97 %' },
+
+    'CLASS XII STATE BOARD': [
+      { name: 'SHELSHIYA SHINY B', image: 'image18.png', percentage: '582/600' },
+      { name: 'CHITRITHA', image: 'image19.png', percentage: '577/600' },
+      { name: 'AAKSHAY SHANKAR', image: 'image20.png', percentage: '569/600' },
+      { name: 'ULLAS T', image: 'image21.png', percentage: '569/600 %' },
+      { name: 'HARSHITHA PODILI', image: 'image22.png', percentage: '564/600' },
+      { name: 'ADITI C.S', image: 'image23.png', percentage: '561/600' },
+      { name: 'LALITHA MADALA', image: 'image24.png', percentage: '541/600' },
+      { name: 'PRAGNYA H.SULIBHAVI', image: 'image25.png', percentage: '540/600' },
+      { name: 'BODHANA P', image: 'image26.png', percentage: '539/600' },
+      { name: 'ASYA T V', image: 'image27.png', percentage: '534/600' },
+      { name: 'SHRAVYA K R', image: 'image28.png', percentage: '529/600' },
+      { name: 'VISHAL R', image: 'image29.png', percentage: '528/600' },
+      { name: 'VARSHINI MEGHA', image: 'image30.png', percentage: '535/600' },
     ],
   },
   '2022': {
-    'CBSE X Toppers': [
-      { name: 'PRIYA VERMA', image: 'https://via.placeholder.com/150/303030/fff?Text=PV', percentage: '97.5 %' },
-      { name: 'RAHUL SHARMA', image: 'https://via.placeholder.com/150/202020/fff?Text=RS', percentage: '97.2 %' },
-      { name: 'KAVYA IYER', image: 'https://via.placeholder.com/150/101010/fff?Text=KI', percentage: '96.8 %' },
+    'SSLC 2022': [
+      { name: 'SANJANA GC', image: 'image16.jpg', percentage: '600/625' },
+      { name: 'TEJASWINI S', image: 'image17.jpg', percentage: '549/625' },
     ],
-    'ICSE X Toppers': [
-      { name: 'ADITI GUPTA', image: 'https://via.placeholder.com/150/000000/fff?Text=AG', percentage: '99.1 %' },
-      { name: 'SAHIL KHAN', image: 'https://via.placeholder.com/150/333333/eee?Text=SK', percentage: '98.9 %' },
-      { name: 'SHREYA NAIR', image: 'https://via.placeholder.com/150/666666/ddd?Text=SN', percentage: '98.5 %' },
-    ],
-  },
+    },
   '2021': {
-    'CBSE X Toppers': [
-      { name: 'ANJALI SINGH', image: 'https://via.placeholder.com/150/999999/ccc?Text=AS', percentage: '98.1 %' },
-      { name: 'ARYAN VERMA', image: 'https://via.placeholder.com/150/bbb/aaa?Text=AV', percentage: '97.9 %' },
-      { name: 'SIMRAN KAUR', image: 'https://via.placeholder.com/150/ddd/999?Text=SK', percentage: '97.6 %' },
+    'JEE (Main) 2021': [
+      { name: 'NAVEEN BALAJI K', image: 'image11.jpg', percentage: '97.35 %' },
     ],
-    'ICSE X Toppers': [
-      { name: 'ISHAN PATEL', image: 'https://via.placeholder.com/150/eee/888?Text=IP', percentage: '99.3 %' },
-      { name: 'TANVI MEHTA', image: 'https://via.placeholder.com/150/fff/777?Text=TM', percentage: '99.0 %' },
-      { name: 'VIRAT REDDY', image: 'https://via.placeholder.com/150/111/eee?Text=VR', percentage: '98.7 %' },
+    'NEET 2021': [
+      { name: 'KAVANA S', image: 'image12.jpg', percentage: '599/720' },
+      { name: 'RITHESH SINGH', image: 'image14.jpg', percentage: '599/720' },
     ],
-  },
-  '2020': {
-    'CBSE X Toppers': [
-      { name: 'GAURAV SHARMA', image: 'https://via.placeholder.com/150/222/ddd?Text=GS', percentage: '97.8 %' },
-      { name: 'PRIYANKA GUPTA', image: 'https://via.placeholder.com/150/444/bbb?Text=PG', percentage: '97.5 %' },
-      { name: 'SACHIN IYER', image: 'https://via.placeholder.com/150/666/999?Text=SI', percentage: '97.1 %' },
+    'NTSE Stage I(2021)': [
+      { name: 'DEEPAK CHARAN S', image: 'image13.jpg', percentage: 'MAT-90 SAT-83' },
     ],
-    'ICSE X Toppers': [
-      { name: 'MAYA NAIR', image: 'https://via.placeholder.com/150/888/777?Text=MN', percentage: '99.5 %' },
-      { name: 'KUNAL VERMA', image: 'https://via.placeholder.com/150/aaa/555?Text=KV', percentage: '99.2 %' },
-      { name: 'DIVYA SINGH', image: 'https://via.placeholder.com/150/ccc/333?Text=DS', percentage: '98.9 %' },
+    'NATA (Architecture)': [
+      { name: 'KRITHIKA K K', image: 'image15.jpg', percentage: 'KCET Rank: 838' },
     ],
   },
   '2019': {
-    'CBSE X Toppers': [
-      { name: 'HARSHIT RAI', image: 'https://via.placeholder.com/150/eee/111?Text=HR', percentage: '97.2 %' },
-      { name: 'SHIVANI DIXIT', image: 'https://via.placeholder.com/150/ddd/222?Text=SD', percentage: '96.9 %' },
-      { name: 'ROHAN MEHRA', image: 'https://via.placeholder.com/150/bbb/444?Text=RM', percentage: '96.5 %' },
+    'II PUC 2019': [
+      { name: 'NANDINI N', image: 'image5.jpg', percentage: 'COMMERCE-FIRST CLASS' },
+      { name: 'KEERTHI P', image: 'image6.jpg', percentage: 'COMMERCE 96%, ACC-100, BS-98, SAT-98, BS -93' },
+      { name: 'SHILPA RAJAN', image: 'image7.jpg', percentage: 'COMMERCE 85%, ACC-96, SAT-94, BS-90, BM-79' },
+      { name: 'ADITI MOHAN', image: 'image8.jpg', percentage: 'COMMERCE 94%, ACC-98, BM-95, SAT-94, BS-97' },
+      { name: 'PRITHVI RAJ S', image: 'image9.jpg', percentage: 'COMMERCE 85%, ACC-97, ECO-96, BS-82, BM-79' },
+      { name: 'PRANATHI P S', image: 'image10.jpg', percentage: 'COMMERCE 90%, ACC-91, ECO-99, BS-97, CS-91' },
     ],
-    'ICSE X Toppers': [
-      { name: 'NISHA PATEL', image: 'https://via.placeholder.com/150/999/666?Text=NP', percentage: '99.7 %' },
-      { name: 'AKASH GUPTA', image: 'https://via.placeholder.com/150/777/888?Text=AG', percentage: '99.4 %' },
-      { name: 'PRIYA SHETTY', image: 'https://via.placeholder.com/150/555/aaa?Text=PS', percentage: '99.1 %' },
+  },
+  '2018': {
+    'II PUC 2019': [
+      { name: 'YASHWANTH', image: 'image1.jpg', percentage: '576/625' },
+      { name: 'NIKHIHTA SARIKA', image: 'image2.jpg', percentage: 'COMMERCE 95%, ACC-100, BM-97, STAT-94, BS-92' },
+      { name: 'KAVANA S', image: 'image3.jpg', percentage: '607/625' },
+      { name: 'NAYANA ML', image: 'image4.jpg', percentage: '594/625' },
     ],
   },
 };
@@ -108,7 +125,7 @@ const ToppersPage: React.FC = () => {
 
   return (
     <section className='min-h-screen'>
-      <div className='bg-gray-800 p-10 md:px-8 lg:px-16'>
+      <div className='bg-gray-800 p-12 md:px-8 lg:px-16'>
 
       </div>
       <div className="bg-white"> {/* Changed background color to gray-700 */}
@@ -187,12 +204,12 @@ const ToppersPage: React.FC = () => {
                               <img
                                 src={topper.image}
                                 alt={topper.name}
-                                className="w-full h-48 object-cover"
+                                className="w-full h-54 object-cover"
                                 loading="lazy"
                               />
                             </div>
                             <div className="p-4 text-center">
-                              <h3 className="text-lg font-semibold text-gray-800 mb-1 line-clamp-1">
+                              <h3 className="text-lg font-semibold text-gray-800 mb-1 break-words">
                                 {topper.name}
                               </h3>
                               <p className="text-lg text-rose-600 font-bold">

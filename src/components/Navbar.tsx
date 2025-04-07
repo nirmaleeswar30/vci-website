@@ -17,6 +17,10 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const dropdownRef = useRef<HTMLDivElement>(null);
   
+  // Logo images for different states
+  const lightLogo = '/logo.png'; // White/light logo for transparent navbar
+  const darkLogo = '/logo.png';   // Dark logo for white navbar
+  
   const navItems: NavItem[] = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
@@ -63,8 +67,6 @@ const Navbar: React.FC = () => {
     scrolled ? 'bg-white shadow-md text-gray-800' : 'bg-transparent text-white'
   } p-6 md:px-8 lg:px-16`;
 
-  const logoClassName = `text-2xl font-bold ${scrolled ? 'text-gray-800' : 'text-white'}`;
-
   const actionIconClassName = `hover:text-gray-300 ${scrolled ? 'text-gray-800' : 'text-white'}`;
 
   const isActive = (path: string) => location.pathname === path;
@@ -84,8 +86,15 @@ const Navbar: React.FC = () => {
   return (
     <header className={navbarClassName}>
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className={logoClassName}>
-          Academist
+        <Link to="/" className="flex items-center">
+          <motion.img 
+            src={scrolled ? darkLogo : lightLogo}
+            alt="Academist Logo"
+            className="h-10 md:h-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+          />
         </Link>
 
         <nav className="hidden md:block">

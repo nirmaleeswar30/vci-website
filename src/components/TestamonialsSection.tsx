@@ -111,7 +111,7 @@ const TestimonialsSection: React.FC = () => {
   const toColor = currentTheme.toColor;
 
   return (
-    <section ref={sectionRef} className="py-38 relative overflow-hidden transition-colors duration-500">
+    <section ref={sectionRef} className="py-14 relative overflow-hidden transition-colors duration-500">
       {/* Dynamic background */}
       <div className={`absolute inset-0 ${currentTheme.themeColor} opacity-95 transition-colors duration-500`}></div>
       <div className="absolute inset-0 opacity-10">

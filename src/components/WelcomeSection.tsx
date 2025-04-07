@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { BookOpen, Award, Users, GraduationCap } from 'lucide-react';
+// Removed unused icons: BookOpen, Award, Users, GraduationCap
 
 const WelcomeSection = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: false, // Keep animation triggering on scroll in/out
     threshold: 0.3,
   });
 
@@ -23,7 +23,7 @@ const WelcomeSection = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.2, // Stagger animation between left and right columns
         delayChildren: 0.3,
       },
     },
@@ -36,54 +36,47 @@ const WelcomeSection = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: [0.25, 0.1, 0.25, 1], // Example easing
       },
     },
   };
 
-  const stats = [
-    { icon: <GraduationCap size={36} />, value: "150+", label: "Students" },
-    { icon: <Users size={36} />, value: "20+", label: "Expert Faculty" },
-    { icon: <Award size={36} />, value: "100%", label: "Success Focus" },
-    { icon: <BookOpen size={36} />, value: "8+", label: "Years Experience" },
-  ];
+  // Removed the 'stats' array as it's no longer needed
 
   return (
-    <section 
+    <section
       ref={ref}
-      className="relative py-38 overflow-hidden bg-gradient-to-br from-blue-900 to-purple-900"
+      className="relative py-24 md:py-32 lg:py-38 overflow-hidden bg-gradient-to-br from-blue-900 to-purple-900" // Adjusted padding
     >
-      {/* Animated background elements */}
-      <motion.div 
+      {/* Animated background elements (kept as is) */}
+      <motion.div
         className="absolute inset-0 opacity-10"
         initial={{ scale: 1.2 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 2, ease: "easeOut" }}
+        transition={{ duration: 2, ease: 'easeOut' }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/path/to/abstract-pattern.svg')] bg-repeat opacity-20" />
       </motion.div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center" // Adjusted gap
           variants={containerVariants}
           initial="hidden"
           animate={controls}
         >
-          {/* Left Column - Text Content */}
+          {/* Left Column - Text Content (mostly unchanged) */}
           <motion.div variants={itemVariants}>
-            <motion.h2 
+            <motion.h2
               className="text-4xl md:text-5xl font-bold text-white mb-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
+              // Removed separate animation props, inherits from parent itemVariants
             >
               WELCOME TO <span className="text-yellow-400">VAGDEVI CAREER INSTITUTE</span>
             </motion.h2>
 
-            <motion.div 
+            <motion.div
               className="space-y-6 text-gray-200 text-lg leading-relaxed"
-              variants={itemVariants}
+              // Removed separate variants, inherits from parent itemVariants
             >
               <p>
                 The fundamental principle of the Vagdevi Institute, <span className="font-semibold text-yellow-300">"Knowledge First,"</span> provides a solid foundation.
@@ -96,9 +89,9 @@ const WelcomeSection = () => {
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="mt-10"
-              variants={itemVariants}
+             // Removed separate variants, inherits from parent itemVariants
             >
               <button className="px-8 py-3 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/30">
                 Explore Our Programs
@@ -106,34 +99,23 @@ const WelcomeSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Stats Cards */}
-          <motion.div 
-            className="grid grid-cols-2 gap-6"
-            variants={containerVariants}
+          {/* Right Column - Image */}
+          <motion.div
+            variants={itemVariants} // Apply item animation to the image container
+            className="flex justify-center items-center mt-8 lg:mt-0" // Center image, add margin top on small screens
           >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:border-yellow-400/50 transition-all duration-500 hover:shadow-lg hover:shadow-yellow-400/10"
-                whileHover={{ y: -5 }}
-              >
-                <div className="text-yellow-400 mb-3">
-                  {stat.icon}
-                </div>
-                <h3 className="text-3xl font-bold text-white mb-1">
-                  {stat.value}
-                </h3>
-                <p className="text-gray-300 font-medium">
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
+            <motion.img
+              src="welcome.jpg" // <-- ***** REPLACE WITH YOUR IMAGE PATH *****
+              alt="Students at Vagdevi Career Institute"
+              className="rounded-xl shadow-2xl w-full max-w-md lg:max-w-7xl h-auto object-cover " // Style the image
+              whileHover={{ scale: 1.03 }} // Optional: add hover effect to image
+              transition={{ duration: 0.3 }}
+            />
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Floating animated elements */}
+      {/* Floating animated elements (kept as is) */}
       <motion.div
         className="absolute top-20 right-20 w-16 h-16 rounded-full bg-yellow-400/20 blur-xl"
         animate={{

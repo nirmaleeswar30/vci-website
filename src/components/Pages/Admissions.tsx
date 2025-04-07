@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent, MouseEvent } from 'react';
 import { motion } from 'framer-motion';
 import { Presentation, FileText, Calculator } from 'lucide-react';
+import ApplySection from '../ApplySection';
 
 const AdmissionPage = () => {
   const [formData, setFormData] = useState({
@@ -75,7 +76,7 @@ const AdmissionPage = () => {
               JOIN NOW
             </motion.a>
             <motion.a
-              href="/api/download/admission-form"
+              href="application.pdf"
               download
               whileHover={{ scale: 1.05, boxShadow: "0px 5px 15px rgba(0,0,0,0.2)" }}
               whileTap={{ scale: 0.95 }}
@@ -129,6 +130,7 @@ const AdmissionPage = () => {
           </motion.div>
         </div>
       </section>
+      <ApplySection />
 
       {/* Enquiry Form Section */}
       <section id="enquiry-form" className="py-16 bg-gray-50">
@@ -178,6 +180,7 @@ const AdmissionPage = () => {
             </motion.button>
           </form>
         </div>
+        
       </section>
     </div>
   );

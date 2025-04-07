@@ -32,10 +32,9 @@ function App() {
             <main>
               <Hero />
               <WelcomeSection />
-              <CategorySection />
-              <CampaignSection />
+              {/* <CategorySection />
+              <CampaignSection /> */}
               <StatsSection />
-              <ProfessionalsSection />
               <TestimonialsSection />
               <TourSection />
               <ApplySection />
